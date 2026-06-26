@@ -1,4 +1,5 @@
 import AppKit
+import SwiftUI
 
 public extension NSWindow {
 

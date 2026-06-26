@@ -1,4 +1,5 @@
 import AppKit
+import os
 
 /// AppKit delegate that bootstraps the Desktop Frame engine stack.
 ///

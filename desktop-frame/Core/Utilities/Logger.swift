@@ -1,3 +1,4 @@
+import Foundation
 import os.log
 
 /// Centralised OSLog loggers for Desktop Frame.
