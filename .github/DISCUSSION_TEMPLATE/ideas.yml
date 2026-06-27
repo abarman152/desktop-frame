@@ -1,0 +1,43 @@
+title: "[Idea] "
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to propose and discuss an idea before it becomes a feature request.
+        Good ideas here may graduate into a tracked feature. See CONTRIBUTING.md.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What gap or opportunity does this address? Describe the situation, not just a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: How might it work? Rough is fine.
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who it is for
+      description: Which kind of user benefits most?
+      options:
+        - Developer / power user
+        - Trader / markets
+        - Creator / video editor
+        - Student / researcher
+        - Designer / aesthete
+        - Everyone
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and references
+      description: Examples, prior art, or links that help.
+    validations:
+      required: false
