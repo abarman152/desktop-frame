@@ -35,7 +35,9 @@ When two documents conflict, the higher level wins, except that a more specific 
 | [Product/](Product) | Product docs engineering depends on; source of truth for strategy is Notion | Product |
 | [Engineering/](Engineering) | Engineering notes that are not standards or processes: known limitations, investigations | Principal Engineer |
 | [Development/](Development) | Developer guides: setup, build, debugging, local workflows | Staff Engineer |
-| [Design/](Design) | Design system, HIG working notes, UI specs that ship with code | Product Designer |
+| [Design/](Design) | Design system, philosophy, tokens, motion, iconography, theme, accessibility, engineering handoff | Product Designer |
+| [Components/](Components/README.md) | The reusable UI component library, grouped by family | Product Designer |
+| [UX/](UX/README.md) | Interaction model, widget/wallpaper/settings UX, information architecture, user flows | UI/UX |
 | [Decisions/](Decisions/README.md) | Architecture Decision Records, one immutable file per decision | Principal Engineer |
 | [Processes/](Processes) | How we work: git, sprints, bugs, releases, quality, Notion | Engineering Manager |
 | [Standards/](Standards) | Enforceable rules: documentation, code, naming, security, performance, accessibility | Principal Engineer |
@@ -71,11 +73,19 @@ When two documents conflict, the higher level wins, except that a more specific 
 
 ### Design
 
-[DesignSystem](Design/DesignSystem.md)
+[Design index](Design/README.md) · [DesignPhilosophy](Design/DesignPhilosophy.md) · [DesignSystem](Design/DesignSystem.md) · [DesignTokens](Design/DesignTokens.md) · [ColorSystem](Design/ColorSystem.md) · [Typography](Design/Typography.md) · [LayoutAndSpacing](Design/LayoutAndSpacing.md) · [MaterialsAndElevation](Design/MaterialsAndElevation.md) · [MotionSystem](Design/MotionSystem.md) · [Iconography](Design/Iconography.md) · [ThemeArchitecture](Design/ThemeArchitecture.md) · [AccessibilityDesign](Design/AccessibilityDesign.md) · [EngineeringHandoff](Design/EngineeringHandoff.md)
+
+### Components
+
+[Component library index](Components/README.md) · [ComponentArchitecture](Components/ComponentArchitecture.md) · [Surfaces](Components/Surfaces.md) · [Controls](Components/Controls.md) · [Navigation](Components/Navigation.md) · [Overlays](Components/Overlays.md) · [DataAndCharts](Components/DataAndCharts.md) · [Widgets](Components/Widgets.md) · [StatesAndFeedback](Components/StatesAndFeedback.md) · [Marketplace](Components/Marketplace.md)
+
+### UX
+
+[UX index](UX/README.md) · [InteractionModel](UX/InteractionModel.md) · [WidgetUX](UX/WidgetUX.md) · [WallpaperUX](UX/WallpaperUX.md) · [SettingsUX](UX/SettingsUX.md) · [InformationArchitecture](UX/InformationArchitecture.md) · [UserFlows](UX/UserFlows.md)
 
 ### Research
 
-[MacOSPlatformResearch](Research/MacOSPlatformResearch.md)
+[MacOSPlatformResearch](Research/MacOSPlatformResearch.md) · [DesktopCustomizationUXResearch](Research/DesktopCustomizationUXResearch.md)
 
 ### Processes
 
@@ -83,11 +93,11 @@ When two documents conflict, the higher level wins, except that a more specific 
 
 ### Standards
 
-[DocumentationStandards](Standards/DocumentationStandards.md) · [DocumentationStyleGuide](Standards/DocumentationStyleGuide.md) · [SwiftStyleGuide](Standards/SwiftStyleGuide.md) · [CodeStyle](Standards/CodeStyle.md) · [NamingConventions](Standards/NamingConventions.md) · [FolderStructure](Standards/FolderStructure.md) · [BranchingStrategy](Standards/BranchingStrategy.md) · [CommitConvention](Standards/CommitConvention.md) · [ReviewChecklist](Standards/ReviewChecklist.md) · [PerformanceStandards](Standards/PerformanceStandards.md) · [SecurityStandards](Standards/SecurityStandards.md) · [AccessibilityStandards](Standards/AccessibilityStandards.md) · [DependencyPolicy](Standards/DependencyPolicy.md)
+[DocumentationStandards](Standards/DocumentationStandards.md) · [DocumentationStyleGuide](Standards/DocumentationStyleGuide.md) · [SwiftStyleGuide](Standards/SwiftStyleGuide.md) · [CodeStyle](Standards/CodeStyle.md) · [NamingConventions](Standards/NamingConventions.md) · [FolderStructure](Standards/FolderStructure.md) · [BranchingStrategy](Standards/BranchingStrategy.md) · [CommitConvention](Standards/CommitConvention.md) · [ReviewChecklist](Standards/ReviewChecklist.md) · [PerformanceStandards](Standards/PerformanceStandards.md) · [SecurityStandards](Standards/SecurityStandards.md) · [AccessibilityStandards](Standards/AccessibilityStandards.md) · [DesignStandards](Standards/DesignStandards.md) · [DependencyPolicy](Standards/DependencyPolicy.md)
 
 ### Decisions
 
-[ADR system](Decisions/README.md) · [0000 Record architecture decisions](Decisions/ADR-0000-record-architecture-decisions.md) · [0001 AppKit window / SwiftUI content](Decisions/ADR-0001-appkit-window-swiftui-content.md) · [0002 Actor-isolated services](Decisions/ADR-0002-actor-isolated-system-services.md) · [0003 @Observable state](Decisions/ADR-0003-observable-state-model.md) · [0004 Layered architecture](Decisions/ADR-0004-layered-architecture-dependency-rule.md) · [0005 Initializer DI](Decisions/ADR-0005-initializer-dependency-injection.md) · [0006 Tiered rendering](Decisions/ADR-0006-tiered-rendering-strategy.md) · [0007 Out-of-process plugins](Decisions/ADR-0007-out-of-process-plugin-isolation.md) · [0008 Persistence strategy](Decisions/ADR-0008-persistence-strategy.md) · [0009 Per-display layouts](Decisions/ADR-0009-per-display-independent-layouts.md) · [0010 Widget config schema](Decisions/ADR-0010-widget-configuration-schema-versioning.md) · [0011 Swift 6 baseline](Decisions/ADR-0011-swift6-strict-concurrency-baseline.md)
+[ADR system](Decisions/README.md) · [0000 Record architecture decisions](Decisions/ADR-0000-record-architecture-decisions.md) · [0001 AppKit window / SwiftUI content](Decisions/ADR-0001-appkit-window-swiftui-content.md) · [0002 Actor-isolated services](Decisions/ADR-0002-actor-isolated-system-services.md) · [0003 @Observable state](Decisions/ADR-0003-observable-state-model.md) · [0004 Layered architecture](Decisions/ADR-0004-layered-architecture-dependency-rule.md) · [0005 Initializer DI](Decisions/ADR-0005-initializer-dependency-injection.md) · [0006 Tiered rendering](Decisions/ADR-0006-tiered-rendering-strategy.md) · [0007 Out-of-process plugins](Decisions/ADR-0007-out-of-process-plugin-isolation.md) · [0008 Persistence strategy](Decisions/ADR-0008-persistence-strategy.md) · [0009 Per-display layouts](Decisions/ADR-0009-per-display-independent-layouts.md) · [0010 Widget config schema](Decisions/ADR-0010-widget-configuration-schema-versioning.md) · [0011 Swift 6 baseline](Decisions/ADR-0011-swift6-strict-concurrency-baseline.md) · [0012 Semantic design tokens](Decisions/ADR-0012-semantic-design-token-architecture.md) · [0013 Native materials](Decisions/ADR-0013-native-materials-over-custom-translucency.md) · [0014 Direct-manipulation interaction](Decisions/ADR-0014-direct-manipulation-widget-interaction-model.md) · [0015 Settings IA](Decisions/ADR-0015-settings-information-architecture.md)
 
 ### Templates
 

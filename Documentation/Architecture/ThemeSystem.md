@@ -5,7 +5,7 @@ owner: Principal Engineer
 created: 2026-06-27
 updated: 2026-06-27
 review_by: 2026-09-27
-related: [Architecture.md, RenderingEngine.md, ../Design/DesignSystem.md, ../Standards/AccessibilityStandards.md, ../Decisions/ADR-0003-observable-state-model.md]
+related: [Architecture.md, RenderingEngine.md, ../Design/DesignSystem.md, ../Design/DesignTokens.md, ../Design/ThemeArchitecture.md, ../Standards/AccessibilityStandards.md, ../Decisions/ADR-0003-observable-state-model.md, ../Decisions/ADR-0012-semantic-design-token-architecture.md, ../Decisions/ADR-0013-native-materials-over-custom-translucency.md]
 ---
 
 # Theme system architecture

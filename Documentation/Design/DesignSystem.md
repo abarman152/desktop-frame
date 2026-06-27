@@ -5,16 +5,18 @@ owner: Product Designer
 created: 2026-06-27
 updated: 2026-06-27
 review_by: 2026-09-27
-related: [../Architecture/ThemeSystem.md, ../Standards/AccessibilityStandards.md, ../Templates/UISpecification.md]
+related: [README.md, DesignTokens.md, ColorSystem.md, Typography.md, LayoutAndSpacing.md, MaterialsAndElevation.md, MotionSystem.md, Iconography.md, ../Architecture/ThemeSystem.md, ../Standards/AccessibilityStandards.md, ../Templates/UISpecification.md]
 ---
 
 # Design system
 
-The visual language Desktop Frame is built from: the semantic tokens, their meaning, and the HIG rationale behind them. This document owns *what the tokens are and why*; the [ThemeSystem](../Architecture/ThemeSystem.md) owns *how they reach the screen at runtime*. The two are deliberately split so design intent and rendering mechanism evolve independently.
+The visual language Desktop Frame is built from: the semantic tokens, their meaning, and the HIG rationale behind them. This document owns *what the tokens are and why*; the [ThemeSystem](../Architecture/ThemeSystem.md) owns *how they reach the screen at runtime*. The two are deliberately split so design intent and rendering mechanism evolve independently. It is the entry point to the design system; the per-group detail and the full token reference live in the linked docs below and are mapped by the [Design index](README.md).
+
+The token groups summarised here each have a dedicated owner doc: [colour](ColorSystem.md), [type](Typography.md), [spacing/layout](LayoutAndSpacing.md), [materials/elevation](MaterialsAndElevation.md), [motion](MotionSystem.md), [iconography](Iconography.md), and the consolidated, code-anchored [token reference](DesignTokens.md). The semantic-role model is recorded in [ADR-0012](../Decisions/ADR-0012-semantic-design-token-architecture.md) and native materials in [ADR-0013](../Decisions/ADR-0013-native-materials-over-custom-translucency.md).
 
 ## Purpose and scope
 
-In scope: the token taxonomy (colour, material, type, spacing, motion, iconography), their semantic meaning, the appearance modes, and the accessibility and HIG principles that constrain them. Out of scope: the runtime distribution and inheritance engine ([ThemeSystem](../Architecture/ThemeSystem.md)) and per-screen layouts ([UISpecification](../Templates/UISpecification.md)).
+In scope: the token taxonomy (colour, material, type, spacing, motion, iconography), their semantic meaning, the appearance modes, and the accessibility and HIG principles that constrain them. Out of scope: the runtime distribution and inheritance engine ([ThemeSystem](../Architecture/ThemeSystem.md)), the per-group detail and token reference (the linked Design docs), and per-screen layouts ([UISpecification](../Templates/UISpecification.md)).
 
 ## Context
 
