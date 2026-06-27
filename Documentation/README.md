@@ -57,6 +57,26 @@ When two documents conflict, the higher level wins, except that a more specific 
 
 ## Document index
 
+### Architecture
+
+[Architecture index](Architecture/README.md) · [System architecture](Architecture/Architecture.md) · [CleanArchitecture](Architecture/CleanArchitecture.md) · [DataFlow](Architecture/DataFlow.md) · [DependencyInjection](Architecture/DependencyInjection.md) · [WindowSystem](Architecture/WindowSystem.md) · [DesktopEngine](Architecture/DesktopEngine.md) · [WidgetEngine](Architecture/WidgetEngine.md) · [RenderingEngine](Architecture/RenderingEngine.md) · [WallpaperEngine](Architecture/WallpaperEngine.md) · [MultiMonitorArchitecture](Architecture/MultiMonitorArchitecture.md) · [ThemeSystem](Architecture/ThemeSystem.md) · [PluginSDK](Architecture/PluginSDK.md) · [SystemServices](Architecture/SystemServices.md)
+
+### Engineering
+
+[GovernanceAuditReport](Engineering/GovernanceAuditReport.md) · [EngineeringReadinessAssessment](Engineering/EngineeringReadinessAssessment.md) · [PerformanceEngineering](Engineering/PerformanceEngineering.md)
+
+### Development
+
+[DevelopmentSetup](DevelopmentSetup.md) · [TestingStrategy](Development/TestingStrategy.md)
+
+### Design
+
+[DesignSystem](Design/DesignSystem.md)
+
+### Research
+
+[MacOSPlatformResearch](Research/MacOSPlatformResearch.md)
+
 ### Processes
 
 [GitWorkflow](Processes/GitWorkflow.md) · [SprintManagement](Processes/SprintManagement.md) · [BugManagement](Processes/BugManagement.md) · [DocumentationLifecycle](Processes/DocumentationLifecycle.md) · [QualityGates](Processes/QualityGates.md) · [ReleaseManagement](Processes/ReleaseManagement.md) · [VersioningStrategy](Processes/VersioningStrategy.md) · [NotionOperatingSystem](Processes/NotionOperatingSystem.md) · [ProjectLifecycle](Processes/ProjectLifecycle.md) · [RiskManagement](Processes/RiskManagement.md) · [ChangeManagement](Processes/ChangeManagement.md) · [IncidentManagement](Processes/IncidentManagement.md) · [CommunicationGuidelines](Processes/CommunicationGuidelines.md)
@@ -67,7 +87,7 @@ When two documents conflict, the higher level wins, except that a more specific 
 
 ### Decisions
 
-[ADR system](Decisions/README.md) · [ADR-0000 Record architecture decisions](Decisions/ADR-0000-record-architecture-decisions.md)
+[ADR system](Decisions/README.md) · [0000 Record architecture decisions](Decisions/ADR-0000-record-architecture-decisions.md) · [0001 AppKit window / SwiftUI content](Decisions/ADR-0001-appkit-window-swiftui-content.md) · [0002 Actor-isolated services](Decisions/ADR-0002-actor-isolated-system-services.md) · [0003 @Observable state](Decisions/ADR-0003-observable-state-model.md) · [0004 Layered architecture](Decisions/ADR-0004-layered-architecture-dependency-rule.md) · [0005 Initializer DI](Decisions/ADR-0005-initializer-dependency-injection.md) · [0006 Tiered rendering](Decisions/ADR-0006-tiered-rendering-strategy.md) · [0007 Out-of-process plugins](Decisions/ADR-0007-out-of-process-plugin-isolation.md) · [0008 Persistence strategy](Decisions/ADR-0008-persistence-strategy.md) · [0009 Per-display layouts](Decisions/ADR-0009-per-display-independent-layouts.md) · [0010 Widget config schema](Decisions/ADR-0010-widget-configuration-schema-versioning.md) · [0011 Swift 6 baseline](Decisions/ADR-0011-swift6-strict-concurrency-baseline.md)
 
 ### Templates
 
@@ -91,4 +111,4 @@ Documentation is updated by the change that makes it inaccurate, in the same pul
 
 ## Migration note
 
-Four documents predate this hierarchy and sit at the `Documentation/` root: `Architecture.md`, `CodingStandards.md`, `DevelopmentSetup.md`, and `FolderStructure.md`. They migrate to `Architecture/Architecture.md`, `Architecture/FolderStructure.md`, and `Development/DevelopmentSetup.md`. The Swift content of the old `CodingStandards.md` is superseded by [Standards/SwiftStyleGuide.md](Standards/SwiftStyleGuide.md). Because the Notion Documentation Index links to the current paths, each move and its Index update happen in the same change so no link breaks. Until a file is moved, its root copy is canonical.
+Four documents predate this hierarchy and sat at the `Documentation/` root: `Architecture.md`, `CodingStandards.md`, `DevelopmentSetup.md`, and `FolderStructure.md`. `Architecture.md` has been migrated: the canonical content now lives at [Architecture/Architecture.md](Architecture/Architecture.md), expanded into the full subsystem tree under [Architecture/](Architecture), and the root file is a `Superseded` forward-link. Still pending: `FolderStructure.md` → `Architecture/FolderStructure.md` and `DevelopmentSetup.md` → `Development/DevelopmentSetup.md`; the Swift content of the old `CodingStandards.md` is superseded by [Standards/SwiftStyleGuide.md](Standards/SwiftStyleGuide.md). Because the Notion Documentation Index links to the current paths, each move and its Index update happen in the same change so no link breaks. Until a file is moved, its root copy is canonical.
