@@ -1,0 +1,154 @@
+# =============================================================================
+# Desktop Frame — .gitignore
+# -----------------------------------------------------------------------------
+# Scope: a native macOS app built with Swift 6 / SwiftUI / AppKit in Xcode.
+# Principle: ignore only generated, local, or secret artifacts. NEVER ignore
+# files required for a reproducible build — those are listed under "Keep" below.
+# Each section is grouped and commented so the rules stay maintainable.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# macOS system files
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# -----------------------------------------------------------------------------
+# Xcode — user-specific state (never reproducible, never shared)
+# -----------------------------------------------------------------------------
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad
+*.xcscmblueprint
+*.xccheckout
+
+# Xcode build output
+build/
+DerivedData/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode 8+ / legacy index & artifacts
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+.idea_modules/
+
+# -----------------------------------------------------------------------------
+# Swift Package Manager
+# -----------------------------------------------------------------------------
+.build/
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/configuration/
+.swiftpm/xcode/xcuserdata/
+.netrc
+Packages/
+# NOTE: Package.resolved IS committed (see "Keep" below) for reproducible builds.
+
+# -----------------------------------------------------------------------------
+# CocoaPods (optional — not used today; rules ready if adopted)
+# -----------------------------------------------------------------------------
+Pods/
+# Podfile.lock is intentionally kept (see "Keep").
+
+# -----------------------------------------------------------------------------
+# Carthage (optional)
+# -----------------------------------------------------------------------------
+Carthage/Build/
+Carthage/Checkouts/
+
+# -----------------------------------------------------------------------------
+# Tooling: Fastlane / Tuist / Mint (optional)
+# -----------------------------------------------------------------------------
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+fastlane/.env*
+# Tuist
+.tuist/
+Derived/
+*.xcodeproj.tuist-backup
+# Mint
+.mint/
+
+# -----------------------------------------------------------------------------
+# Test, coverage, and profiling artifacts
+# -----------------------------------------------------------------------------
+*.xcresult/
+*.profraw
+*.profdata
+coverage/
+*.coverage
+*.lcov
+.swiftpm/test/
+
+# -----------------------------------------------------------------------------
+# Generated documentation (DocC output, jazzy, etc.)
+# -----------------------------------------------------------------------------
+docs/generated/
+*.doccarchive
+.docc-build/
+
+# -----------------------------------------------------------------------------
+# Secrets, signing, and private configuration — MUST never be committed
+# -----------------------------------------------------------------------------
+*.p12
+*.cer
+*.certSigningRequest
+*.mobileprovision
+*.provisionprofile
+*.pem
+*.key
+.env
+.env.*
+secrets.xcconfig
+Secrets.plist
+*.local.xcconfig
+
+# -----------------------------------------------------------------------------
+# Editors and IDEs
+# -----------------------------------------------------------------------------
+# VS Code — keep shared workspace settings (.vscode/ is tracked); ignore local only
+.vscode/*.local
+.history/
+# JetBrains (AppCode / IntelliJ)
+.idea/
+*.iml
+# Vim / Emacs / general backups
+*~
+*.swp
+*.swo
+*.bak
+*.orig
+*.tmp
+
+# =============================================================================
+# Keep — files required for reproducible builds (explicitly NOT ignored).
+# These un-ignore rules document intent even when no parent rule excludes them.
+# =============================================================================
+!Package.resolved
+!**/contents.xcworkspacedata
+!**/*.xcscheme               # shared schemes under xcshareddata/ stay tracked
+!Podfile.lock
+!.swift-format
+!.swiftformat
