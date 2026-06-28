@@ -28,8 +28,9 @@ A feature spec, the HIG, the design system, and the accessibility standard.
 ## Outputs and deliverables
 
 - A [UI specification](../Documentation/Templates/UISpecification.md) and, where needed, a [UX research](../Documentation/Templates/UXResearch.md) write-up.
-- Design system updates.
-- Review sign-off on the user-experience quality gate.
+- Updates to the design system ([Design/](../Documentation/Design/README.md)), the component library ([Components/](../Documentation/Components/README.md)), and the experience model ([UX/](../Documentation/UX/README.md)).
+- Enforcement of the [design standards](../Documentation/Standards/DesignStandards.md) and [accessibility standards](../Documentation/Standards/AccessibilityStandards.md).
+- Review sign-off on the user-experience and accessibility quality gates.
 
 ## Decision rules
 
@@ -44,7 +45,7 @@ Escalate to a human for product-level UX decisions that change scope, and to the
 
 ## Documentation responsibilities
 
-Keep the UI specifications and design-system docs in `Documentation/Design/` current. Record UX findings as research.
+Keep the design system (`Documentation/Design/`), component library (`Documentation/Components/`), and UX docs (`Documentation/UX/`) current. Record UX findings as research.
 
 ## Code quality expectations
 

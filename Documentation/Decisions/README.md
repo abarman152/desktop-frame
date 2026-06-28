@@ -54,6 +54,10 @@ ADRs are listed here as they are accepted, newest first.
 
 | ADR | Title | Status | Date |
 |---|---|---|---|
+| 0015 | Settings information architecture | Accepted | 2026-06-27 |
+| 0014 | Direct-manipulation widget interaction model | Accepted | 2026-06-27 |
+| 0013 | Native materials over custom translucency | Accepted | 2026-06-27 |
+| 0012 | Semantic design-token architecture | Accepted | 2026-06-27 |
 | 0011 | Swift 6 strict concurrency and the macOS 15 baseline | Accepted | 2026-06-27 |
 | 0010 | Widget configuration schema and versioning | Accepted | 2026-06-27 |
 | 0009 | Per-display independent layouts keyed by stable display identity | Accepted | 2026-06-27 |

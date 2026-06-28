@@ -5,12 +5,12 @@ owner: UI/UX
 created: 2026-06-26
 updated: 2026-06-26
 review_by: 2026-09-26
-related: [../Processes/QualityGates.md, ../../.agents/UI_UX_AGENT.md]
+related: [../Processes/QualityGates.md, ../../.agents/UI_UX_AGENT.md, ../Design/AccessibilityDesign.md, DesignStandards.md]
 ---
 
 # Accessibility standards
 
-Desktop Frame is usable by everyone, on the same release as everyone else. Accessibility is part of the definition of done, not a later pass. The project's `ios-accessibility` skill carries the implementation patterns; this standard sets the bar.
+Desktop Frame is usable by everyone, on the same release as everyone else. Accessibility is part of the definition of done, not a later pass. The project's `ios-accessibility` skill carries the implementation patterns and [Design/AccessibilityDesign](../Design/AccessibilityDesign.md) carries the design-side patterns; this standard sets the bar.
 
 ## Requirements
 
