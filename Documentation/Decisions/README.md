@@ -54,6 +54,17 @@ ADRs are listed here as they are accepted, newest first.
 
 | ADR | Title | Status | Date |
 |---|---|---|---|
+| 0011 | Swift 6 strict concurrency and the macOS 15 baseline | Accepted | 2026-06-27 |
+| 0010 | Widget configuration schema and versioning | Accepted | 2026-06-27 |
+| 0009 | Per-display independent layouts keyed by stable display identity | Accepted | 2026-06-27 |
+| 0008 | Persistence strategy | Accepted | 2026-06-27 |
+| 0007 | Out-of-process plugin isolation | Accepted | 2026-06-27 |
+| 0006 | Tiered rendering strategy | Accepted | 2026-06-27 |
+| 0005 | Initializer-based dependency injection | Accepted | 2026-06-27 |
+| 0004 | Layered architecture and the downward dependency rule | Accepted | 2026-06-27 |
+| 0003 | `@Observable` for UI-facing state | Accepted | 2026-06-27 |
+| 0002 | Actor-isolated system services | Accepted | 2026-06-27 |
+| 0001 | AppKit window host with SwiftUI content at the desktop level | Accepted | 2026-06-27 |
 | 0000 | Record architecture decisions | Accepted | 2026-06-26 |
 
 The Notion Engineering section mirrors this index for project-management visibility. The files here are canonical.
